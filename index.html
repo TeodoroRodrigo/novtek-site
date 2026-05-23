@@ -11,19 +11,13 @@
     <meta name="theme-color" content="#F7F5F0">
     <link rel="icon" href="assets/novtek-favicon.svg?v=2" type="image/svg+xml">
     <link rel="preload" href="assets/novtek-wordmark-logo-v1.svg?v=2" as="image" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=4">
   </head>
   <body>
     <header class="site-header">
       <a class="brand-link" href="#top" aria-label="Novtek">
         <img src="assets/novtek-wordmark-logo-v1.svg?v=2" alt="Novtek" width="410" height="150">
       </a>
-
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="#frentes" data-i18n="nav.fronts">Areas</a>
-        <a href="#metodo" data-i18n="nav.method">Method</a>
-        <a href="#entregas" data-i18n="nav.delivery">Deliverables</a>
-      </nav>
 
       <div class="header-tools">
         <a class="header-action" href="mailto:contato@novtek.com.br" data-i18n="cta.primary">Talk to Novtek</a>
@@ -39,17 +33,9 @@
             <p class="hero-lede">
               <span data-i18n="hero.lede">Novtek structures executive solutions for investment decisions, asset organization and business development with clarity, control and consistent monitoring.</span>
             </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="mailto:contato@novtek.com.br" data-i18n="cta.primary">Talk to Novtek</a>
-              <p data-i18n="hero.note">Clear capital. Visible assets. Monitored business.</p>
-            </div>
           </div>
 
           <div class="system-panel reveal" aria-label="Visual abstrato de investimentos, ativos e negócios">
-            <div class="panel-topline">
-              <span data-i18n="panel.title">Executive system</span>
-              <span data-i18n="panel.context">investments / assets / business</span>
-            </div>
             <svg class="process-map" viewBox="0 0 680 560" role="img" aria-label="Investment, asset and business operating flow">
               <defs>
                 <linearGradient id="signal" x1="0" x2="1" y1="0" y2="1">
@@ -244,7 +230,7 @@
     <footer class="site-footer">
       <img src="assets/novtek-wordmark-logo-v1.svg?v=2" alt="Novtek" width="410" height="150">
       <span data-i18n="footer.copy">Solutions and Services.</span>
-      <button type="button" class="footer-language" data-lang="pt" aria-label="Change language to Brazilian Portuguese">
+      <button type="button" class="footer-language" aria-label="Change language to Brazilian Portuguese" onclick="toggleLanguage()">
         <svg viewBox="0 0 28 20" aria-hidden="true" focusable="false">
           <rect width="28" height="20" rx="2" fill="#229e45"/>
           <path d="M14 3.2 24 10 14 16.8 4 10 14 3.2Z" fill="#f7df3e"/>
@@ -254,6 +240,6 @@
       </button>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=3"></script>
   </body>
 </html>

@@ -4,17 +4,11 @@ const translations = {
     metaTitle: "Novtek | Solutions and Services",
     metaDescription:
       "A Novtek estrutura soluções e serviços para investimentos, ativos e negócios com inteligência executiva, processos claros e acompanhamento consistente.",
-    "nav.fronts": "Frentes",
-    "nav.method": "Método",
-    "nav.delivery": "Entregas",
     "cta.primary": "Falar com a Novtek",
     "hero.tagline": "Solutions and Services",
     "hero.title": "Soluções e serviços para investimentos, ativos e negócios.",
     "hero.lede":
       "A Novtek estrutura soluções executivas para decisões de investimento, organização de ativos e desenvolvimento de negócios com clareza, controle e acompanhamento consistente.",
-    "hero.note": "Capital claro. Ativos visíveis. Negócios acompanhados.",
-    "panel.title": "Sistema executivo",
-    "panel.context": "investimentos / ativos / negócios",
     "panel.metric1.label": "Ativos",
     "panel.metric1.value": "360°",
     "panel.metric2.label": "Capital",
@@ -71,17 +65,11 @@ const translations = {
     metaTitle: "Novtek | Solutions and Services",
     metaDescription:
       "Novtek structures solutions and services for investments, assets and business with executive intelligence, clear processes and consistent monitoring.",
-    "nav.fronts": "Areas",
-    "nav.method": "Method",
-    "nav.delivery": "Deliverables",
     "cta.primary": "Talk to Novtek",
     "hero.tagline": "Solutions and Services",
     "hero.title": "Solutions and services for investments, assets and business.",
     "hero.lede":
       "Novtek structures executive solutions for investment decisions, asset organization and business development with clarity, control and consistent monitoring.",
-    "hero.note": "Clear capital. Visible assets. Monitored business.",
-    "panel.title": "Executive system",
-    "panel.context": "investments / assets / business",
     "panel.metric1.label": "Assets",
     "panel.metric1.value": "360°",
     "panel.metric2.label": "Capital",
@@ -130,12 +118,16 @@ const translations = {
   }
 };
 
-const languageButtons = document.querySelectorAll("[data-lang]");
+const languageToggle = document.querySelector(".footer-language");
 const translatableElements = document.querySelectorAll("[data-i18n]");
+let currentLanguage = "en";
 
 function setLanguage(language) {
-  const dictionary = translations[language] || translations.pt;
-  document.documentElement.lang = language === "en" ? "en" : "pt-BR";
+  const normalizedLanguage = language === "pt" ? "pt" : "en";
+  const dictionary = translations[normalizedLanguage];
+  currentLanguage = normalizedLanguage;
+
+  document.documentElement.lang = normalizedLanguage === "en" ? "en" : "pt-BR";
   document.title = dictionary.metaTitle;
 
   const description = document.querySelector('meta[name="description"]');
@@ -150,16 +142,22 @@ function setLanguage(language) {
     }
   });
 
-  languageButtons.forEach(button => {
-    const isActive = button.dataset.lang === language;
-    button.classList.toggle("is-active", isActive);
-    button.setAttribute("aria-pressed", String(isActive));
-  });
+  if (languageToggle) {
+    const isPortuguese = normalizedLanguage === "pt";
+    languageToggle.classList.toggle("is-active", isPortuguese);
+    languageToggle.setAttribute("aria-pressed", String(isPortuguese));
+    languageToggle.setAttribute(
+      "aria-label",
+      isPortuguese ? "Change language to English" : "Change language to Brazilian Portuguese"
+    );
+  }
 }
 
-languageButtons.forEach(button => {
-  button.addEventListener("click", () => setLanguage(button.dataset.lang));
-});
+function toggleLanguage() {
+  setLanguage(currentLanguage === "en" ? "pt" : "en");
+}
+
+window.toggleLanguage = toggleLanguage;
 
 setLanguage("en");
 

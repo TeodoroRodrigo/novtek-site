@@ -29,6 +29,10 @@ section[id] {
   scroll-margin-top: 92px;
 }
 
+main#top {
+  scroll-margin-top: 76px;
+}
+
 body {
   margin: 0;
   background: var(--canvas);
@@ -65,7 +69,7 @@ button:focus-visible {
   top: 0;
   z-index: 20;
   display: grid;
-  grid-template-columns: 168px 1fr auto;
+  grid-template-columns: 1fr auto;
   gap: 28px;
   align-items: center;
   min-height: 76px;
@@ -77,28 +81,18 @@ button:focus-visible {
 
 .brand-link,
 .brand-link img {
-  width: 132px;
+  width: 126px;
   height: auto;
 }
 
-.site-nav {
-  display: flex;
-  justify-content: center;
-  gap: 36px;
-  color: #2d3137;
-  font-size: 15px;
-  font-weight: 650;
+.brand-link {
+  display: inline-flex;
+  align-items: center;
 }
 
-.site-nav a,
 .header-action,
-.button,
 .language-option {
   transition: color 180ms ease, background 180ms ease, border-color 180ms ease, transform 180ms ease;
-}
-
-.site-nav a:hover {
-  color: var(--brand-dark);
 }
 
 .header-tools {
@@ -138,8 +132,7 @@ button:focus-visible {
   color: #ffffff;
 }
 
-.header-action,
-.button {
+.header-action {
   display: inline-flex;
   min-height: 46px;
   align-items: center;
@@ -156,18 +149,10 @@ button:focus-visible {
   color: #ffffff;
 }
 
-.header-action:hover,
-.button-primary:hover {
+.header-action:hover {
   background: var(--brand-dark);
   border-color: var(--brand-dark);
   transform: translateY(-1px);
-}
-
-.button-primary {
-  padding: 0 22px;
-  background: var(--brand);
-  border: 1px solid var(--brand);
-  color: #ffffff;
 }
 
 .hero {
@@ -193,8 +178,8 @@ button:focus-visible {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 0.86fr) minmax(410px, 0.74fr);
-  gap: 64px;
+  grid-template-columns: minmax(0, 0.88fr) minmax(410px, 0.72fr);
+  gap: clamp(40px, 5vw, 64px);
   align-items: center;
   min-height: calc(100vh - 76px);
   padding-top: 82px;
@@ -235,39 +220,24 @@ button:focus-visible {
 }
 
 .hero-copy h1 {
-  max-width: 760px;
-  font-size: clamp(48px, 6.1vw, 86px);
-  line-height: 0.96;
+  max-width: 740px;
+  font-size: clamp(48px, 5.8vw, 82px);
+  line-height: 0.98;
   color: var(--ink);
 }
 
 .hero-lede {
-  max-width: 640px;
+  max-width: 620px;
   margin: 24px 0 0;
   color: var(--muted);
   font-size: 20px;
   line-height: 1.56;
 }
 
-.hero-actions {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-top: 34px;
-}
-
-.hero-actions p {
-  max-width: 245px;
-  margin: 0;
-  color: var(--quiet);
-  font-size: 14px;
-  font-weight: 650;
-}
-
 .system-panel {
   position: relative;
   overflow: hidden;
-  padding: 22px;
+  padding: clamp(16px, 2vw, 22px);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 246, 239, 0.88)),
     var(--surface);
@@ -286,22 +256,11 @@ button:focus-visible {
   background: radial-gradient(circle, rgba(255, 107, 26, 0.28), transparent 68%);
 }
 
-.panel-topline {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 16px;
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
 .process-map {
   position: relative;
   width: 100%;
-  min-height: 346px;
+  height: auto;
+  aspect-ratio: 680 / 560;
   padding: 10px;
   background: #ffffff;
   border: 1px solid var(--line);
@@ -484,25 +443,12 @@ button:focus-visible {
 .method-card {
   position: relative;
   overflow: hidden;
-  min-height: 250px;
+  min-height: 238px;
   padding: 28px;
   background: #ffffff;
   border: 1px solid var(--line);
   border-radius: 24px;
   box-shadow: 0 18px 50px rgba(49, 33, 22, 0.08);
-}
-
-.front-card::after,
-.delivery-card::after,
-.method-card::after {
-  position: absolute;
-  right: 22px;
-  bottom: 20px;
-  width: 46px;
-  height: 46px;
-  content: "";
-  background: var(--brand-soft);
-  border-radius: 14px;
 }
 
 .front-card > span,
@@ -524,7 +470,7 @@ button:focus-visible {
 .delivery-card h3,
 .method-card strong {
   display: block;
-  margin: 58px 0 14px;
+  margin: 52px 0 14px;
   font-size: 21px;
   font-weight: 850;
   line-height: 1.12;
@@ -536,6 +482,8 @@ button:focus-visible {
 .contact-layout p {
   margin: 0;
   color: var(--muted);
+  font-size: 16px;
+  line-height: 1.48;
 }
 
 .contact-section {
@@ -568,7 +516,7 @@ button:focus-visible {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: 24px;
+  gap: 28px;
   padding: 30px max(24px, calc((100vw - var(--max)) / 2));
   background: #ffffff;
   border-top: 1px solid var(--line);
@@ -577,7 +525,7 @@ button:focus-visible {
 }
 
 .site-footer img {
-  width: 112px;
+  width: 104px;
   height: auto;
 }
 
@@ -653,14 +601,6 @@ button:focus-visible {
     --gutter: 24px;
   }
 
-  .site-header {
-    grid-template-columns: 1fr auto;
-  }
-
-  .site-nav {
-    display: none;
-  }
-
   .hero,
   .hero-inner,
   .problem-layout,
@@ -675,7 +615,16 @@ button:focus-visible {
   }
 
   .hero-inner {
-    padding: 74px 0 64px;
+    padding: 68px 0 64px;
+  }
+
+  .hero-copy h1 {
+    max-width: 640px;
+    font-size: clamp(44px, 7vw, 68px);
+  }
+
+  .hero-lede {
+    max-width: 610px;
   }
 
   .fronts-grid {
@@ -694,36 +643,30 @@ button:focus-visible {
   }
 
   .section-shell {
-    width: calc(100dvw - 40px);
-    max-width: 350px;
-    margin-right: 20px;
-    margin-left: 20px;
+    width: min(100% - 40px, 420px);
   }
 
   .site-header {
-    position: static;
-    grid-template-columns: 1fr;
-    gap: 18px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    gap: 16px;
+    min-height: 68px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 
   .brand-link,
   .brand-link img {
-    width: 118px;
+    width: 110px;
   }
 
   .header-tools {
-    width: 100%;
-    justify-content: space-between;
-    gap: 8px;
+    justify-content: flex-end;
   }
 
   .header-action {
-    flex: 1;
-    min-width: 0;
     min-height: 42px;
-    padding: 0 12px;
+    padding: 0 14px;
     font-size: 13px;
     white-space: nowrap;
   }
@@ -737,7 +680,7 @@ button:focus-visible {
   }
 
   .hero-inner {
-    padding: 58px 0 54px;
+    padding: 48px 0 54px;
   }
 
   .hero-copy h1 {
@@ -752,27 +695,14 @@ button:focus-visible {
     overflow-wrap: break-word;
   }
 
-  .hero-actions {
-    align-items: stretch;
-    flex-direction: column;
-  }
-
-  .button-primary {
-    width: 100%;
-  }
-
   .system-panel {
-    padding: 16px;
+    padding: 12px;
     border-radius: 22px;
   }
 
-  .panel-topline {
-    flex-direction: column;
-    gap: 4px;
-  }
-
   .process-map {
-    min-height: 280px;
+    padding: 8px;
+    border-radius: 16px;
   }
 
   .problem-layout {
@@ -814,7 +744,7 @@ button:focus-visible {
   .front-card h3,
   .delivery-card h3,
   .method-card strong {
-    margin-top: 42px;
+    margin-top: 38px;
   }
 
   .contact-layout {
@@ -824,7 +754,18 @@ button:focus-visible {
   }
 
   .site-footer {
-    align-items: flex-start;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto 1fr auto;
+    gap: 14px;
+    align-items: center;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  .site-footer img {
+    width: 92px;
+  }
+
+  .site-footer span {
+    font-size: 13px;
   }
 }
