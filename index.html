@@ -1,152 +1,172 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Strateo | Estratégia, inteligência e processo</title>
+    <title>Novtek | Solutions and Services</title>
     <meta
       name="description"
-      content="A Strateo estrutura sistemas de decisão e execução para transformar estratégia em rotina, dados em clareza e processos em resultado."
+      content="A Novtek estrutura soluções e serviços para investimentos, ativos e negócios com inteligência executiva, processos claros e acompanhamento consistente."
     >
     <meta name="theme-color" content="#F7F5F0">
-    <link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml">
-    <link rel="preload" href="assets/strateo-wordmark-logo-v1.svg?v=2" as="image" type="image/svg+xml">
+    <link rel="icon" href="assets/novtek-favicon.svg?v=2" type="image/svg+xml">
+    <link rel="preload" href="assets/novtek-wordmark-logo-v1.svg?v=2" as="image" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
-      <a class="brand-link" href="#top" aria-label="Strateo">
-        <img src="assets/strateo-wordmark-logo-v1.svg?v=2" alt="Strateo" width="1110" height="270">
+      <a class="brand-link" href="#top" aria-label="Novtek">
+        <img src="assets/novtek-wordmark-logo-v1.svg?v=2" alt="Novtek" width="410" height="150">
       </a>
 
-      <nav class="site-nav" aria-label="Navegação principal">
-        <a href="#frentes">Frentes</a>
-        <a href="#metodo">Método</a>
-        <a href="#entregas">Entregas</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#frentes" data-i18n="nav.fronts">Areas</a>
+        <a href="#metodo" data-i18n="nav.method">Method</a>
+        <a href="#entregas" data-i18n="nav.delivery">Deliverables</a>
       </nav>
 
-      <a class="header-action" href="mailto:contato@strateo.com.br">Falar com a Strateo</a>
+      <div class="header-tools">
+        <a class="header-action" href="mailto:contato@novtek.com.br" data-i18n="cta.primary">Talk to Novtek</a>
+      </div>
     </header>
 
     <main id="top">
-      <section class="hero section-shell" aria-labelledby="hero-title">
-        <div class="hero-copy reveal">
-          <h1 id="hero-title">Estratégia, inteligência e processo para transformar operação em resultado.</h1>
-          <p class="hero-lede">
-            A Strateo cria sistemas práticos de execução: indicadores, rotinas, automações e fluxos de decisão para empresas que precisam operar com mais clareza, controle e velocidade.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="mailto:contato@strateo.com.br">Falar com a Strateo</a>
-            <p>Decisão clara. Processo visível. Resultado acompanhado.</p>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-inner section-shell">
+          <div class="hero-copy reveal">
+            <p class="brand-line" data-i18n="hero.tagline">Solutions and Services</p>
+            <h1 id="hero-title" data-i18n="hero.title">Solutions and services for investments, assets and business.</h1>
+            <p class="hero-lede">
+              <span data-i18n="hero.lede">Novtek structures executive solutions for investment decisions, asset organization and business development with clarity, control and consistent monitoring.</span>
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="mailto:contato@novtek.com.br" data-i18n="cta.primary">Talk to Novtek</a>
+              <p data-i18n="hero.note">Clear capital. Visible assets. Monitored business.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="system-panel reveal" aria-label="Visual abstrato de processos, indicadores e fluxos de decisão">
-          <div class="panel-topline">
-            <span>Sistema de execução</span>
-            <span>rotina / decisão / evidência</span>
-          </div>
-          <svg class="process-map" viewBox="0 0 680 560" role="img" aria-label="Mapa abstrato de fluxo operacional">
-            <defs>
-              <linearGradient id="signal" x1="0" x2="1" y1="0" y2="1">
-                <stop offset="0" stop-color="#0E4F5A"/>
-                <stop offset="1" stop-color="#2C8A99"/>
-              </linearGradient>
-            </defs>
-
-            <rect class="map-frame" x="28" y="28" width="624" height="504" rx="8"/>
-            <path class="grid-line" d="M88 92H592M88 166H592M88 240H592M88 314H592M88 388H592M88 462H592"/>
-            <path class="grid-line" d="M160 76V486M300 76V486M440 76V486"/>
-
-            <path class="flow-path path-a" d="M102 128H228C272 128 272 218 316 218H486C526 218 526 318 566 318"/>
-            <path class="flow-path path-b" d="M102 352H210C258 352 258 278 306 278H420C468 278 468 424 516 424H580"/>
-            <path class="flow-path path-c" d="M160 462V404C160 374 190 374 190 344V222C190 190 222 190 222 158"/>
-
-            <g class="node node-large">
-              <rect x="82" y="96" width="144" height="64" rx="6"/>
-              <path d="M110 122H188M110 140H158"/>
-            </g>
-            <g class="node">
-              <rect x="270" y="186" width="136" height="64" rx="6"/>
-              <path d="M298 212H364M298 230H342"/>
-            </g>
-            <g class="node">
-              <rect x="486" y="286" width="112" height="64" rx="6"/>
-              <path d="M514 312H568M514 330H550"/>
-            </g>
-            <g class="node">
-              <rect x="82" y="320" width="136" height="64" rx="6"/>
-              <path d="M110 346H176M110 364H150"/>
-            </g>
-            <g class="node">
-              <rect x="294" y="246" width="130" height="64" rx="6"/>
-              <path d="M322 272H386M322 290H370"/>
-            </g>
-            <g class="node node-small">
-              <rect x="502" y="392" width="104" height="64" rx="6"/>
-              <path d="M530 418H578M530 436H560"/>
-            </g>
-
-            <g class="checkpoint">
-              <circle cx="102" cy="128" r="7"/>
-              <circle cx="316" cy="218" r="7"/>
-              <circle cx="566" cy="318" r="7"/>
-              <circle cx="102" cy="352" r="7"/>
-              <circle cx="306" cy="278" r="7"/>
-              <circle cx="580" cy="424" r="7"/>
-            </g>
-          </svg>
-          <div class="panel-metrics" aria-hidden="true">
-            <div>
-              <span>Controle</span>
-              <strong>92%</strong>
+          <div class="system-panel reveal" aria-label="Visual abstrato de investimentos, ativos e negócios">
+            <div class="panel-topline">
+              <span data-i18n="panel.title">Executive system</span>
+              <span data-i18n="panel.context">investments / assets / business</span>
             </div>
-            <div>
-              <span>Cadência</span>
-              <strong>5 rotinas</strong>
-            </div>
-            <div>
-              <span>Evidência</span>
-              <strong>ao vivo</strong>
-            </div>
+            <svg class="process-map" viewBox="0 0 680 560" role="img" aria-label="Investment, asset and business operating flow">
+              <defs>
+                <linearGradient id="signal" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0" stop-color="#F26A21"/>
+                  <stop offset="1" stop-color="#C74712"/>
+                </linearGradient>
+                <linearGradient id="signalSoft" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0" stop-color="#FFD2B8"/>
+                  <stop offset="1" stop-color="#F26A21"/>
+                </linearGradient>
+              </defs>
+
+              <rect class="map-frame" x="28" y="28" width="624" height="504" rx="8"/>
+              <path class="grid-line" d="M92 104H588M92 188H588M92 272H588M92 356H588M92 440H588"/>
+              <path class="grid-line" d="M154 82V476M340 82V476M526 82V476"/>
+
+              <path class="flow-path path-a" d="M184 148H256C296 148 296 254 336 254H398"/>
+              <path class="flow-path path-b" d="M184 374H258C300 374 300 306 336 306H398"/>
+              <path class="flow-path path-c" d="M456 280H512C552 280 552 170 592 170"/>
+              <path class="flow-path path-d" d="M456 298H508C554 298 554 392 592 392"/>
+              <path class="flow-loop" d="M584 416C584 488 420 500 342 430C290 384 294 340 330 320"/>
+
+              <g class="decision-orbit" aria-hidden="true">
+                <circle cx="426" cy="280" r="78"/>
+                <circle cx="426" cy="280" r="52"/>
+              </g>
+
+              <g class="node node-large">
+                <rect x="76" y="104" width="150" height="88" rx="8"/>
+                <circle cx="104" cy="132" r="7"/>
+                <text class="node-title" x="124" y="136">Assets</text>
+                <path d="M104 160H180M104 176H158"/>
+              </g>
+              <g class="node node-large">
+                <rect x="76" y="330" width="150" height="88" rx="8"/>
+                <circle cx="104" cy="358" r="7"/>
+                <text class="node-title" x="124" y="362">Business</text>
+                <path d="M104 386H182M104 402H152"/>
+              </g>
+              <g class="node decision-node">
+                <rect x="340" y="232" width="172" height="96" rx="10"/>
+                <circle cx="372" cy="262" r="7"/>
+                <text class="node-title" x="392" y="266">Allocation</text>
+                <path d="M372 292H466M372 308H438"/>
+              </g>
+              <g class="node control-node">
+                <rect x="278" y="104" width="124" height="70" rx="8"/>
+                <circle cx="304" cy="130" r="6"/>
+                <text class="node-title" x="322" y="134">Risk</text>
+                <path d="M304 154H366"/>
+              </g>
+              <g class="node control-node">
+                <rect x="278" y="386" width="124" height="70" rx="8"/>
+                <circle cx="304" cy="412" r="6"/>
+                <text class="node-title" x="322" y="416">Control</text>
+                <path d="M304 436H366"/>
+              </g>
+              <g class="node node-small">
+                <rect x="516" y="126" width="104" height="88" rx="8"/>
+                <circle cx="544" cy="154" r="7"/>
+                <text class="node-title" x="562" y="158">Execute</text>
+                <path d="M544 184H596M544 200H578"/>
+              </g>
+              <g class="node node-small">
+                <rect x="516" y="348" width="104" height="88" rx="8"/>
+                <circle cx="544" cy="376" r="7"/>
+                <text class="node-title" x="562" y="380">Report</text>
+                <path d="M544 406H596M544 422H578"/>
+              </g>
+
+              <g class="checkpoint">
+                <circle cx="184" cy="148" r="7"/>
+                <circle cx="184" cy="374" r="7"/>
+                <circle cx="398" cy="254" r="7"/>
+                <circle cx="398" cy="306" r="7"/>
+                <circle cx="592" cy="170" r="7"/>
+                <circle cx="592" cy="392" r="7"/>
+              </g>
+            </svg>
           </div>
         </div>
       </section>
 
       <section class="problem-band" aria-labelledby="problem-title">
         <div class="section-shell problem-layout reveal">
-          <p>Estratégia não vira rotina. Dados ficam espalhados. Processos dependem de memória, planilha e cobrança manual.</p>
-          <h2 id="problem-title">O custo aparece em follow-up perdido, decisão lenta e execução inconsistente.</h2>
+          <p data-i18n="problem.copy">Investments, assets and business opportunities require reliable information, executive interpretation and a disciplined monitoring routine.</p>
+          <h2 id="problem-title" data-i18n="problem.title">When data, decisions and responsibilities are dispersed, capital loses speed and clarity.</h2>
         </div>
       </section>
 
       <section id="frentes" class="fronts-section" aria-labelledby="fronts-title">
         <div class="section-shell fronts-layout">
           <div class="section-heading reveal">
-            <span>Frentes</span>
-            <h2 id="fronts-title">Quatro camadas para transformar intenção em operação acompanhada.</h2>
+            <span data-i18n="fronts.label">Areas</span>
+            <h2 id="fronts-title" data-i18n="fronts.title">Four areas connecting executive vision, assets and business execution.</h2>
           </div>
 
           <div class="fronts-grid">
             <article class="front-card reveal">
               <span>01</span>
-              <h3>Estratégia de execução</h3>
-              <p>Prioridades, cadência e clareza sobre o que precisa acontecer primeiro.</p>
+              <h3 data-i18n="fronts.card1.title">Investment solutions</h3>
+              <p data-i18n="fronts.card1.copy">Structures, priorities and readings that support allocation decisions with discipline.</p>
             </article>
             <article class="front-card reveal">
               <span>02</span>
-              <h3>Inteligência de negócio</h3>
-              <p>Dados estruturados para leitura, decisão e acompanhamento recorrente.</p>
+              <h3 data-i18n="fronts.card2.title">Assets and wealth</h3>
+              <p data-i18n="fronts.card2.copy">Information organization, asset monitoring and visibility over critical points.</p>
             </article>
             <article class="front-card reveal">
               <span>03</span>
-              <h3>Controle de processos</h3>
-              <p>Checkpoints, responsabilidades e padrões de evidência para a rotina não escapar.</p>
+              <h3 data-i18n="fronts.card3.title">Business services</h3>
+              <p data-i18n="fronts.card3.copy">Processes, routines and structures for companies that need greater control.</p>
             </article>
             <article class="front-card reveal">
               <span>04</span>
-              <h3>Automação operacional</h3>
-              <p>Fluxos que removem trabalho manual e tornam a execução mais rápida e verificável.</p>
+              <h3 data-i18n="fronts.card4.title">Executive intelligence</h3>
+              <p data-i18n="fronts.card4.copy">Dashboards, indicators and monitoring rhythms for more objective decisions.</p>
             </article>
           </div>
         </div>
@@ -154,28 +174,28 @@
 
       <section id="metodo" class="section-shell method-section" aria-labelledby="method-title">
         <div class="section-heading method-heading reveal">
-          <span>Método</span>
+          <span data-i18n="method.label">Method</span>
           <div>
-            <h2 id="method-title">Como a Strateo tira o processo do papel.</h2>
-            <p>Um ciclo simples para entender a rotina, organizar a execução e manter o controle vivo.</p>
+            <h2 id="method-title" data-i18n="method.title">How Novtek structures a solution.</h2>
+            <p data-i18n="method.copy">A formal cycle to understand the scenario, organize information and keep execution monitored.</p>
           </div>
         </div>
 
         <ol class="method-cards">
           <li class="method-card reveal">
             <span>01</span>
-            <strong>Entender</strong>
-            <p>Mapear como a rotina funciona hoje, onde a informação fica presa e quais pontos precisam de controle.</p>
+            <strong data-i18n="method.step1.title">Understand</strong>
+            <p data-i18n="method.step1.copy">Map objectives, assets, available information and relevant decision points.</p>
           </li>
           <li class="method-card reveal">
             <span>02</span>
-            <strong>Organizar</strong>
-            <p>Definir indicadores, responsáveis, checklists e fluxos para a equipe executar com clareza.</p>
+            <strong data-i18n="method.step2.title">Organize</strong>
+            <p data-i18n="method.step2.copy">Structure indicators, responsibilities, cadence and monitoring materials.</p>
           </li>
           <li class="method-card reveal">
             <span>03</span>
-            <strong>Acompanhar</strong>
-            <p>Medir o que está acontecendo, ajustar a cadência e automatizar o que ainda consome tempo.</p>
+            <strong data-i18n="method.step3.title">Monitor</strong>
+            <p data-i18n="method.step3.copy">Track progress, review priorities and adjust execution as the context evolves.</p>
           </li>
         </ol>
       </section>
@@ -183,28 +203,28 @@
       <section id="entregas" class="delivery-section" aria-labelledby="delivery-title">
         <div class="section-shell">
           <div class="section-heading delivery-heading reveal">
-            <span>Entregas</span>
+            <span data-i18n="delivery.label">Deliverables</span>
             <div>
-              <h2 id="delivery-title">O que a Strateo coloca para rodar.</h2>
-              <p>Menos peças soltas. Mais rotina clara, controle simples e execução acompanhada.</p>
+              <h2 id="delivery-title" data-i18n="delivery.title">What Novtek puts into operation.</h2>
+              <p data-i18n="delivery.copy">Less dispersed information. More clarity over capital, assets, responsibilities and next steps.</p>
             </div>
           </div>
 
           <div class="delivery-cards">
             <article class="delivery-card reveal">
               <span>01</span>
-              <h3>Comercial em dia</h3>
-              <p>Oportunidades, próximos passos e follow-up organizados para a venda não depender de memória.</p>
+              <h3 data-i18n="delivery.card1.title">Asset map</h3>
+              <p data-i18n="delivery.card1.copy">Organized records and views to monitor positions, opportunities and attention points.</p>
             </article>
             <article class="delivery-card reveal">
               <span>02</span>
-              <h3>Operação organizada</h3>
-              <p>Processos, checklists e responsáveis claros para a equipe saber o que fazer no dia a dia.</p>
+              <h3 data-i18n="delivery.card2.title">Executive routine</h3>
+              <p data-i18n="delivery.card2.copy">Rhythms, indicators and support materials to keep decisions and execution aligned.</p>
             </article>
             <article class="delivery-card reveal">
               <span>03</span>
-              <h3>Controle visível</h3>
-              <p>Painéis, registros e automações simples para enxergar o que saiu, o que falta e onde agir.</p>
+              <h3 data-i18n="delivery.card3.title">Processes and services</h3>
+              <p data-i18n="delivery.card3.copy">Workflows, checklists and monitoring for businesses that require precision.</p>
             </article>
           </div>
         </div>
@@ -213,21 +233,25 @@
       <section class="contact-section" aria-labelledby="contact-title">
         <div class="section-shell contact-layout reveal">
           <div>
-            <span class="section-label">Contato</span>
-            <h2 id="contact-title">Fale com a Strateo.</h2>
-            <p>Para estruturar sistemas de execução, indicadores, rotinas e automações com foco em resultado operacional.</p>
+            <span class="section-label" data-i18n="contact.label">Contact</span>
+            <h2 id="contact-title" data-i18n="contact.title">Talk to Novtek.</h2>
+            <p data-i18n="contact.copy">To structure solutions and services focused on investments, assets and business with an executive standard.</p>
           </div>
-          <address>
-            <a class="button button-primary" href="mailto:contato@strateo.com.br">Falar com a Strateo</a>
-            <span>Av. Portugal, 1148, Sala C2501, Setor Marista, Goiânia-GO, CEP 74150-030</span>
-          </address>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <img src="assets/strateo-wordmark-logo-v1.svg?v=2" alt="Strateo" width="1110" height="270">
-      <span>Estratégia, inteligência e processo.</span>
+      <img src="assets/novtek-wordmark-logo-v1.svg?v=2" alt="Novtek" width="410" height="150">
+      <span data-i18n="footer.copy">Solutions and Services.</span>
+      <button type="button" class="footer-language" data-lang="pt" aria-label="Change language to Brazilian Portuguese">
+        <svg viewBox="0 0 28 20" aria-hidden="true" focusable="false">
+          <rect width="28" height="20" rx="2" fill="#229e45"/>
+          <path d="M14 3.2 24 10 14 16.8 4 10 14 3.2Z" fill="#f7df3e"/>
+          <circle cx="14" cy="10" r="4.15" fill="#2b4ca3"/>
+          <path d="M10.3 8.8c2.8-.5 5.4-.1 7.6 1" fill="none" stroke="#fff" stroke-width="1.1"/>
+        </svg>
+      </button>
     </footer>
 
     <script src="script.js"></script>

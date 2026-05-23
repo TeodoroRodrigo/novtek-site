@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 150" role="img" aria-labelledby="title desc">
+  <title id="title">novtek</title>
+  <desc id="desc">Clean modern Novtek wordmark with an orange innovation accent.</desc>
+  <g fill="none" fill-rule="evenodd">
+    <text
+      x="18"
+      y="99"
+      fill="#171717"
+      font-family="Inter, Aptos, Segoe UI, Arial, sans-serif"
+      font-size="86"
+      font-weight="850"
+      letter-spacing="0"
+    >nov</text>
+    <text
+      x="181"
+      y="99"
+      fill="#ff6b1a"
+      font-family="Inter, Aptos, Segoe UI, Arial, sans-serif"
+      font-size="86"
+      font-weight="850"
+      letter-spacing="0"
+    >tek</text>
+    <path d="M332 31h28c9 0 16 7 16 16v28" stroke="#ff6b1a" stroke-width="10" stroke-linecap="round"/>
+    <path d="M350 49l-42 42" stroke="#ff6b1a" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="390" cy="34" r="7" fill="#ff6b1a"/>
+  </g>
+</svg>
