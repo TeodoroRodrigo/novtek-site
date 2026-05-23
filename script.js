@@ -135,6 +135,10 @@ function setLanguage(language) {
     description.setAttribute("content", dictionary.metaDescription);
   }
 
+  document
+    .querySelectorAll('meta[property="og:description"], meta[name="twitter:description"]')
+    .forEach(meta => meta.setAttribute("content", dictionary.metaDescription));
+
   translatableElements.forEach(element => {
     const key = element.getAttribute("data-i18n");
     if (key && dictionary[key]) {

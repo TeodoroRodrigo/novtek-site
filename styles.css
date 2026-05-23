@@ -429,6 +429,12 @@ button:focus-visible {
   gap: 18px;
 }
 
+.method-cards {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .fronts-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
