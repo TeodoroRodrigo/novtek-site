@@ -2,12 +2,6 @@
 
 Static institutional site for Novtek.
 
-Original reference materials used for the adaptation:
-
-- Brand identity: `/Users/teodoro/.openclaw/workspace/brain/business/strateo/brand-identity.md`
-- Site plan: `/Users/teodoro/.openclaw/workspace/docs/plans/2026-05-21-strateo-site-v1.md`
-- Design plan: `/Users/teodoro/.openclaw/workspace/docs/plans/2026-05-21-strateo-design-plan.md`
-
 Novtek direction:
 
 - Brand: Novtek
