@@ -81,7 +81,7 @@ button:focus-visible {
 
 .brand-link,
 .brand-link img {
-  width: 126px;
+  width: 158px;
   height: auto;
 }
 
@@ -144,14 +144,14 @@ button:focus-visible {
 
 .header-action {
   padding: 0 18px;
-  background: var(--brand);
-  border: 1px solid var(--brand);
+  background: var(--ink);
+  border: 1px solid var(--ink);
   color: #ffffff;
 }
 
 .header-action:hover {
-  background: var(--brand-dark);
-  border-color: var(--brand-dark);
+  background: #2a2a2a;
+  border-color: #2a2a2a;
   transform: translateY(-1px);
 }
 
@@ -531,7 +531,7 @@ button:focus-visible {
 }
 
 .site-footer img {
-  width: 104px;
+  width: 132px;
   height: auto;
 }
 
@@ -663,7 +663,7 @@ button:focus-visible {
 
   .brand-link,
   .brand-link img {
-    width: 110px;
+    width: 144px;
   }
 
   .header-tools {
@@ -768,7 +768,7 @@ button:focus-visible {
   }
 
   .site-footer img {
-    width: 92px;
+    width: 118px;
   }
 
   .site-footer span {

@@ -1,6 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Novtek">
-  <rect width="64" height="64" rx="16" fill="#ffffff"/>
-  <path d="M14 43V21h8l18 22V21h10v22h-8L24 21v22H14Z" fill="#171717"/>
-  <path d="M42 16h9c4 0 7 3 7 7v9" fill="none" stroke="#ff6b1a" stroke-width="5" stroke-linecap="round"/>
-  <path d="M48 22 35 35" fill="none" stroke="#ff6b1a" stroke-width="5" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="novtekOrangeIcon" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ff8a00"/>
+      <stop offset="1" stop-color="#ff5c16"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="15" fill="url(#novtekOrangeIcon)"/>
+  <path fill="#ffffff" d="M18 45V19h8.5L41 35.2V19h9v26h-8.5L27 28.8V45H18Z"/>
+  <path fill="#ffe2cc" d="M33 19h6.5L50 45h-7L33 19Z" opacity=".92"/>
+  <circle cx="50" cy="15" r="4" fill="#ffb26c" opacity=".82"/>
 </svg>
