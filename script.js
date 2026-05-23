@@ -4,7 +4,6 @@ const translations = {
     metaTitle: "Novtek | Solutions and Services",
     metaDescription:
       "A Novtek estrutura soluções e serviços para investimentos, ativos e negócios com inteligência executiva, processos claros e acompanhamento consistente.",
-    "cta.primary": "Falar com a Novtek",
     "hero.tagline": "Solutions and Services",
     "hero.title": "Soluções e serviços para investimentos, ativos e negócios.",
     "hero.lede":
@@ -43,19 +42,18 @@ const translations = {
     "method.step3.title": "Acompanhar",
     "method.step3.copy": "Monitorar evolução, revisar prioridades e ajustar a execução conforme o contexto.",
     "delivery.label": "Entregas",
-    "delivery.title": "O que a Novtek coloca em operação.",
+    "delivery.title": "Análise de investimentos e oportunidades de negócio em operação.",
     "delivery.copy":
-      "Menos informação dispersa. Mais clareza sobre capital, ativos, responsabilidades e próximos passos.",
-    "delivery.card1.title": "Mapa de ativos",
+      "Análise estruturada para investimentos, leitura de oportunidades, visibilidade de ativos e execução acompanhada.",
+    "delivery.card1.title": "Análise de investimentos",
     "delivery.card1.copy":
-      "Registros e visões organizadas para acompanhar posições, oportunidades e pontos de atenção.",
-    "delivery.card2.title": "Rotina executiva",
+      "Leituras estruturadas, premissas e materiais de decisão para avaliar alocações e movimentos de capital.",
+    "delivery.card2.title": "Oportunidades de negócio",
     "delivery.card2.copy":
-      "Ritos, indicadores e materiais de suporte para manter decisões e execução alinhadas.",
-    "delivery.card3.title": "Processos e serviços",
+      "Mapeamento, qualificação e acompanhamento de oportunidades, parcerias e movimentos estratégicos.",
+    "delivery.card3.title": "Ativos e execução",
     "delivery.card3.copy":
-      "Fluxos de trabalho, checklists e acompanhamento para negócios que exigem precisão.",
-    "contact.label": "Contato",
+      "Visibilidade de ativos, rotinas, indicadores e fluxos para manter responsabilidades e execução alinhadas.",
     "contact.title": "Fale com a Novtek.",
     "contact.copy":
       "Para estruturar soluções e serviços voltados a investimentos, ativos e negócios com padrão executivo.",
@@ -65,7 +63,6 @@ const translations = {
     metaTitle: "Novtek | Solutions and Services",
     metaDescription:
       "Novtek structures solutions and services for investments, assets and business with executive intelligence, clear processes and consistent monitoring.",
-    "cta.primary": "Talk to Novtek",
     "hero.tagline": "Solutions and Services",
     "hero.title": "Solutions and services for investments, assets and business.",
     "hero.lede":
@@ -101,16 +98,18 @@ const translations = {
     "method.step3.title": "Monitor",
     "method.step3.copy": "Track progress, review priorities and adjust execution as the context evolves.",
     "delivery.label": "Deliverables",
-    "delivery.title": "What Novtek puts into operation.",
+    "delivery.title": "Investment analysis and business opportunities in operation.",
     "delivery.copy":
-      "Less dispersed information. More clarity over capital, assets, responsibilities and next steps.",
-    "delivery.card1.title": "Asset map",
-    "delivery.card1.copy": "Organized records and views to monitor positions, opportunities and attention points.",
-    "delivery.card2.title": "Executive routine",
-    "delivery.card2.copy": "Rhythms, indicators and support materials to keep decisions and execution aligned.",
-    "delivery.card3.title": "Processes and services",
-    "delivery.card3.copy": "Workflows, checklists and monitoring for businesses that require precision.",
-    "contact.label": "Contact",
+      "Structured analysis for investments, opportunity review, asset visibility and monitored execution.",
+    "delivery.card1.title": "Investment analysis",
+    "delivery.card1.copy":
+      "Structured readings, assumptions and decision materials for evaluating allocations and capital moves.",
+    "delivery.card2.title": "Business opportunities",
+    "delivery.card2.copy":
+      "Opportunity mapping, qualification and monitoring for initiatives, partnerships and strategic moves.",
+    "delivery.card3.title": "Assets and execution",
+    "delivery.card3.copy":
+      "Asset visibility, routines, indicators and workflows to keep responsibilities and execution aligned.",
     "contact.title": "Talk to Novtek.",
     "contact.copy":
       "To structure solutions and services focused on investments, assets and business with an executive standard.",

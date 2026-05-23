@@ -5,8 +5,7 @@
       <stop offset="1" stop-color="#ff5c16"/>
     </linearGradient>
   </defs>
-  <rect x="4" y="4" width="56" height="56" rx="15" fill="url(#novtekOrangeIcon)"/>
-  <path fill="#ffffff" d="M18 45V19h8.5L41 35.2V19h9v26h-8.5L27 28.8V45H18Z"/>
-  <path fill="#ffe2cc" d="M33 19h6.5L50 45h-7L33 19Z" opacity=".92"/>
-  <circle cx="50" cy="15" r="4" fill="#ffb26c" opacity=".82"/>
+  <rect x="5" y="5" width="54" height="54" rx="14" fill="url(#novtekOrangeIcon)"/>
+  <path fill="#ffffff" d="M18 45V19h8.2L41 35.4V19h9v26h-8.2L27 28.6V45H18Z"/>
+  <path fill="#ffe0c6" d="M32 19h6.2L50 45h-7L32 19Z" opacity=".9"/>
 </svg>
