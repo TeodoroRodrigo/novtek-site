@@ -4,7 +4,6 @@ const translations = {
     metaTitle: "Novtek | Solutions and Services",
     metaDescription:
       "A Novtek estrutura soluções e serviços para investimentos, ativos e negócios com inteligência executiva, processos claros e acompanhamento consistente.",
-    "hero.tagline": "Solutions and Services",
     "hero.title": "Soluções e serviços para investimentos, ativos e negócios.",
     "hero.lede":
       "A Novtek estrutura soluções executivas para decisões de investimento, organização de ativos e desenvolvimento de negócios com clareza, controle e acompanhamento consistente.",
@@ -63,7 +62,6 @@ const translations = {
     metaTitle: "Novtek | Solutions and Services",
     metaDescription:
       "Novtek structures solutions and services for investments, assets and business with executive intelligence, clear processes and consistent monitoring.",
-    "hero.tagline": "Solutions and Services",
     "hero.title": "Solutions and services for investments, assets and business.",
     "hero.lede":
       "Novtek structures executive solutions for investment decisions, asset organization and business development with clarity, control and consistent monitoring.",
