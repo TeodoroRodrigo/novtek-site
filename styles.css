@@ -1121,7 +1121,7 @@ input {
 .cta-panel {
   max-width: 760px;
   margin: 0;
-  padding: 86px 0 100px;
+  padding: 58px 0 64px;
   border-radius: 0;
   background: transparent;
   color: white;
@@ -1130,10 +1130,10 @@ input {
 
 .cta-panel p {
   max-width: 680px;
-  margin: 34px 0 0;
+  margin: 28px 0 0;
   color: rgba(255,255,255,.74);
-  font-size: clamp(1.25rem, 2.1vw, 1.7rem);
-  line-height: 1.45;
+  font-size: 16px;
+  line-height: 1.55;
   letter-spacing: -.02em;
 }
 
@@ -2186,7 +2186,7 @@ body.site-ready .footer {
   }
 
   .cta-panel {
-    padding: 72px 0 82px;
+    padding: 52px 0 58px;
     border-radius: 0;
   }
 
@@ -2201,7 +2201,7 @@ body.site-ready .footer {
   }
 
   .cta-panel {
-    padding: 58px 0 66px;
+    padding: 44px 0 50px;
     border-radius: 0;
   }
 
@@ -2210,13 +2210,217 @@ body.site-ready .footer {
   }
 
   .cta-panel p {
-    margin: 28px 0 0;
-    font-size: clamp(1.2rem, 4.8vw, 1.55rem);
+    margin: 24px 0 0;
+    font-size: 16px;
     line-height: 1.5;
   }
 
   .cta-panel .btn {
     min-width: 0;
     width: auto;
+  }
+}
+
+/* Overall spacing and typography polish */
+.section {
+  padding: 92px 0;
+}
+
+.hero {
+  padding-top: 132px;
+}
+
+.hero-grid,
+.split-grid,
+.insights-grid,
+.faq-grid {
+  gap: 48px;
+}
+
+.section-heading {
+  margin-bottom: 34px;
+}
+
+.hero h1,
+.section-heading h2,
+.split-copy h2,
+.process h2,
+.insight-copy h2,
+.faq h2,
+.cta-panel h2 {
+  font-size: 4.75rem;
+  line-height: .98;
+}
+
+.hero p {
+  margin: 24px 0 30px;
+  font-size: 1.04rem;
+  line-height: 1.62;
+}
+
+.logo-strip {
+  padding: 14px 0;
+}
+
+.strip-track span {
+  font-size: 1.05rem;
+}
+
+.feature-grid {
+  gap: 16px;
+}
+
+.feature-card {
+  min-height: 280px;
+  padding: 26px;
+}
+
+.feature-card.large {
+  min-height: 580px;
+}
+
+.feature-icon {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  margin-bottom: 12px;
+  font-size: clamp(1.45rem, 2.5vw, 2.45rem);
+}
+
+.feature-card p,
+.split-copy p,
+.insight-copy p {
+  line-height: 1.62;
+}
+
+.feature-points {
+  margin-top: 20px;
+}
+
+.feature-visual,
+.feature-flow,
+.feature-dashboard,
+.alternative-visual {
+  min-height: 104px;
+}
+
+.feature-visual {
+  padding: 22px;
+}
+
+.review-grid {
+  gap: 14px;
+}
+
+.review-card {
+  min-height: 112px;
+  padding: 22px 24px;
+}
+
+.cta-panel {
+  padding: 48px 0 52px;
+}
+
+.cta-panel p {
+  margin: 24px 0 0;
+}
+
+.footer {
+  padding: 28px 0;
+}
+
+@media (max-width: 980px) {
+  .section {
+    padding: 72px 0;
+  }
+
+  .hero {
+    padding-top: 112px;
+  }
+
+  .hero-grid,
+  .split-grid,
+  .insights-grid,
+  .faq-grid {
+    gap: 34px;
+  }
+
+  .hero h1,
+  .section-heading h2,
+  .split-copy h2,
+  .process h2,
+  .insight-copy h2,
+  .faq h2,
+  .cta-panel h2 {
+    font-size: 3.35rem;
+  }
+
+  .feature-card.large {
+    min-height: auto;
+  }
+
+  .cta-panel {
+    padding: 44px 0 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 58px 0;
+  }
+
+  .hero {
+    padding-top: 104px;
+  }
+
+  .section-heading {
+    margin-bottom: 28px;
+  }
+
+  .hero h1,
+  .section-heading h2,
+  .split-copy h2,
+  .process h2,
+  .insight-copy h2,
+  .faq h2,
+  .cta-panel h2 {
+    font-size: 2.45rem;
+  }
+
+  .hero p {
+    margin: 20px 0 24px;
+    font-size: .95rem;
+  }
+
+  .feature-card,
+  .calculator,
+  .tab-panel {
+    padding: 22px;
+  }
+
+  .feature-icon {
+    margin-bottom: 18px;
+  }
+
+  .feature-card h3 {
+    font-size: 1.8rem;
+  }
+
+  .feature-visual,
+  .feature-flow,
+  .feature-dashboard,
+  .alternative-visual {
+    min-height: 92px;
+  }
+
+  .cta-panel {
+    padding: 36px 0 40px;
+  }
+
+  .footer {
+    padding: 24px 0;
   }
 }
