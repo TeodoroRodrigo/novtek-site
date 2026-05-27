@@ -1132,7 +1132,7 @@ input {
   max-width: 680px;
   margin: 34px 0 0;
   color: rgba(255,255,255,.74);
-  font-size: clamp(1.7rem, 3vw, 2.45rem);
+  font-size: clamp(1.25rem, 2.1vw, 1.7rem);
   line-height: 1.45;
   letter-spacing: -.02em;
 }
@@ -1424,8 +1424,8 @@ body {
 .insight-copy h2,
 .faq h2,
 .cta-panel h2 {
-  font-size: 6.1rem;
-  line-height: .92;
+  font-size: 5.15rem;
+  line-height: .96;
 }
 
 .feature-card h3,
@@ -1559,7 +1559,7 @@ body {
   .insight-copy h2,
   .faq h2,
   .cta-panel h2 {
-    font-size: 4.4rem;
+    font-size: 3.75rem;
   }
 }
 
@@ -1580,7 +1580,7 @@ body {
   .insight-copy h2,
   .faq h2,
   .cta-panel h2 {
-    font-size: 3.25rem;
+    font-size: 2.75rem;
   }
 
   .hero p {
@@ -2211,8 +2211,8 @@ body.site-ready .footer {
 
   .cta-panel p {
     margin: 28px 0 0;
-    font-size: clamp(1.65rem, 7vw, 2.2rem);
-    line-height: 1.45;
+    font-size: clamp(1.2rem, 4.8vw, 1.55rem);
+    line-height: 1.5;
   }
 
   .cta-panel .btn {
