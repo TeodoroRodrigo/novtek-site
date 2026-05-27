@@ -2315,21 +2315,29 @@ body.site-ready .footer {
   gap: 14px;
 }
 
+.testimonials {
+  padding-bottom: 36px;
+}
+
 .review-card {
   min-height: 112px;
   padding: 22px 24px;
 }
 
+.final-cta {
+  padding: 0;
+}
+
 .cta-panel {
-  padding: 48px 0 52px;
+  padding: 24px 0 28px;
 }
 
 .cta-panel p {
-  margin: 24px 0 0;
+  margin: 14px 0 0;
 }
 
 .footer {
-  padding: 28px 0;
+  padding: 20px 0;
 }
 
 @media (max-width: 980px) {
