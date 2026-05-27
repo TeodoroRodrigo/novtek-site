@@ -806,6 +806,15 @@ input {
   align-items: center;
 }
 
+.about-grid {
+  display: block;
+}
+
+.about-grid .split-copy {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
 .phone-panel {
   min-height: 620px;
   border-radius: 38px;
