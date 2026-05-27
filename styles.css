@@ -2414,6 +2414,10 @@ body.site-ready .footer {
     gap: 14px;
   }
 
+  .testimonials {
+    padding-bottom: 24px;
+  }
+
   .feature-card,
   .calculator,
   .tab-panel {
@@ -2435,15 +2439,19 @@ body.site-ready .footer {
     min-height: 92px;
   }
 
+  .final-cta {
+    padding: 0;
+  }
+
   .cta-panel {
-    padding: 24px 0 28px;
+    padding: 6px 0 8px;
   }
 
   .cta-panel p {
-    margin-top: 18px;
+    margin-top: 8px;
   }
 
   .footer {
-    padding: 20px 0;
+    padding: 12px 0;
   }
 }
