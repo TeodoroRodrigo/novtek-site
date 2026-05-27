@@ -508,6 +508,8 @@ input {
   transition: transform .35s ease, box-shadow .35s ease;
   overflow: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .feature-card:hover {
@@ -598,10 +600,7 @@ input {
 }
 
 .feature-visual {
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  bottom: 30px;
+  margin-top: auto;
   padding: 28px;
   border-radius: 26px;
   background: var(--bg);
@@ -635,6 +634,89 @@ input {
   background: conic-gradient(var(--orange) 87%, rgba(255,255,255,.14) 0);
   font-size: 1.7rem;
   font-weight: 900;
+}
+
+.feature-flow,
+.feature-dashboard {
+  margin-top: auto;
+  min-height: 118px;
+  border-radius: 24px;
+}
+
+.feature-flow {
+  display: grid;
+  grid-template-columns: 1fr 30px 1fr 30px 1fr;
+  align-items: center;
+  gap: 4px;
+  padding: 18px;
+  background: var(--cream);
+}
+
+.feature-flow span {
+  position: relative;
+  height: 64px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 14px 30px rgba(20,20,20,.05);
+}
+
+.feature-flow span::before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 18px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--orange);
+}
+
+.feature-flow span::after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  right: 18px;
+  bottom: 18px;
+  height: 2px;
+  border-radius: 999px;
+  background: rgba(21,21,21,.18);
+}
+
+.feature-flow i {
+  position: relative;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--orange);
+}
+
+.feature-flow i::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid var(--orange);
+  border-right: 2px solid var(--orange);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.feature-dashboard {
+  display: flex;
+  align-items: end;
+  gap: 12px;
+  padding: 22px;
+  background: rgba(255,255,255,.16);
+  border: 1px solid rgba(255,255,255,.18);
+}
+
+.feature-dashboard span {
+  flex: 1;
+  min-height: 30px;
+  border-radius: 999px 999px 8px 8px;
+  background: linear-gradient(180deg, rgba(255,255,255,.95), rgba(255,255,255,.42));
+  animation: growBar 1.4s ease both;
 }
 
 .split-grid,
