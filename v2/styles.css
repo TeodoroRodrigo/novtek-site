@@ -11,8 +11,8 @@
   --dark-2: #202020;
   --muted: #66635d;
   --line: #e3ded2;
-  --orange: #f26a21;
-  --orange-2: #ff8a3d;
+  --orange: #fd4d01;
+  --orange-2: #ff7a2a;
   --cream: #fff8ec;
   --radius: 28px;
   --shadow: 0 30px 90px rgba(20, 20, 20, .12);
@@ -566,6 +566,37 @@ input {
   color: rgba(255,255,255,.72);
 }
 
+.feature-points {
+  display: grid;
+  gap: 12px;
+  max-width: 560px;
+  margin-top: 28px;
+}
+
+.feature-points div {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 16px;
+  align-items: center;
+  padding: 15px 18px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255,255,255,.66);
+}
+
+.feature-points span {
+  color: var(--orange);
+  font-size: .78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.feature-points strong {
+  color: var(--dark);
+  font-size: .95rem;
+  line-height: 1.35;
+}
+
 .feature-visual {
   position: absolute;
   left: 30px;
@@ -842,14 +873,15 @@ input {
 }
 
 .review-card {
-  padding: 30px;
-  min-height: 300px;
+  padding: 26px 28px;
+  min-height: 132px;
   border-radius: var(--radius);
   background: white;
   border: 1px solid var(--line);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
 }
 
 .review-card p {
@@ -859,7 +891,7 @@ input {
 }
 
 .review-card strong {
-  margin-top: 30px;
+  margin-top: 0;
 }
 
 .review-card span {
@@ -1091,6 +1123,28 @@ section {
   .tab-panel,
   .cta-panel {
     padding: 26px;
+  }
+
+  .feature-card.large {
+    min-height: auto;
+  }
+
+  .feature-points {
+    margin-top: 24px;
+  }
+
+  .feature-points div {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 14px 16px;
+  }
+
+  .feature-visual {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    margin-top: 24px;
   }
 
   .footer-inner {
@@ -1534,10 +1588,10 @@ body {
 }
 
 .review-card {
-  min-height: 170px;
-  padding: 28px;
-  justify-content: flex-end;
-  gap: 12px;
+  min-height: 118px;
+  padding: 24px 28px;
+  justify-content: center;
+  gap: 10px;
 }
 
 .review-card strong {
@@ -1578,6 +1632,17 @@ body {
 }
 
 @media (max-width: 640px) {
+  .announcement {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 11px 14px;
+    margin-bottom: 28px;
+    background: rgba(255, 255, 255, .78);
+    backdrop-filter: blur(16px);
+    font-size: .82rem;
+    line-height: 1.25;
+  }
+
   .hero-actions {
     width: 100%;
   }
@@ -1631,7 +1696,8 @@ body {
   }
 
   .review-card {
-    min-height: 150px;
+    min-height: auto;
+    padding: 22px;
   }
 
   .final-cta {
@@ -1666,7 +1732,7 @@ body.site-ready .footer {
 
 .preloader {
   z-index: 9999;
-  background: #fd4f02;
+  background: #fd4d01;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -1693,7 +1759,7 @@ body.site-ready .footer {
   width: min(470px, 62vw) !important;
   max-width: 78vw;
   height: auto !important;
-  filter: brightness(0) invert(1);
+  filter: none;
   animation: splashLogoIn .9s cubic-bezier(.22, 1, .36, 1) both;
   transition: opacity .65s ease, transform .95s cubic-bezier(.76, 0, .24, 1);
   will-change: transform, opacity;
@@ -1736,5 +1802,205 @@ body.site-ready .footer {
   .footer {
     animation: none !important;
     transition-duration: .01ms !important;
+  }
+}
+
+/* Hero v1 business-opportunity graph */
+.system-panel {
+  position: relative;
+  overflow: hidden;
+  min-width: 0;
+  padding: clamp(16px, 2vw, 22px);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, .94), rgba(255, 247, 241, .9)),
+    var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 38px;
+  box-shadow: 0 34px 90px rgba(49, 33, 22, .12);
+}
+
+.system-panel::before {
+  content: "";
+  position: absolute;
+  right: -120px;
+  bottom: -150px;
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(253, 77, 1, .24), transparent 68%);
+}
+
+.process-map {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 680 / 560;
+  padding: 10px;
+  background: #fff;
+  border-radius: 24px;
+}
+
+.console-main rect,
+.console-card rect {
+  fill: rgba(255, 255, 255, .96);
+  stroke: var(--line);
+}
+
+.console-main rect {
+  filter: drop-shadow(0 20px 38px rgba(45, 34, 26, .07));
+}
+
+.console-kicker {
+  fill: var(--orange);
+  font-size: 15px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.console-axis,
+.console-flow,
+.console-arrows path,
+.console-card path {
+  fill: none;
+  stroke: rgba(189, 171, 158, .62);
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+.console-chart-fill {
+  fill: rgba(253, 77, 1, .1);
+  animation: chartGlow 4.8s ease-in-out infinite;
+}
+
+.console-curve {
+  fill: none;
+  stroke: url(#signal);
+  stroke-linecap: round;
+  stroke-width: 5;
+  stroke-dasharray: 190 42;
+  animation: flow 7s linear infinite;
+}
+
+.console-dot {
+  fill: var(--orange);
+  animation: pointPulse 3.2s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.console-dot:nth-of-type(2) {
+  animation-delay: -1.2s;
+}
+
+.console-bars rect {
+  fill: url(#signal);
+  opacity: .84;
+  animation: barRise 4.4s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center bottom;
+}
+
+.console-bars rect:nth-child(1),
+.console-bars rect:nth-child(2) {
+  opacity: .38;
+}
+
+.console-bars rect:nth-child(2) {
+  animation-delay: -.4s;
+}
+
+.console-bars rect:nth-child(3) {
+  opacity: .58;
+  animation-delay: -.8s;
+}
+
+.console-bars rect:nth-child(4) {
+  animation-delay: -1.2s;
+}
+
+.console-bars rect:nth-child(5) {
+  animation-delay: -1.6s;
+}
+
+.console-card circle {
+  fill: var(--orange);
+}
+
+.console-card-title {
+  fill: var(--dark);
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.console-arrows path {
+  stroke: var(--orange);
+  stroke-width: 2.4;
+  animation: arrowDrift 2.8s ease-in-out infinite;
+}
+
+.console-arrows path:nth-child(2) {
+  animation-delay: -1.1s;
+}
+
+@keyframes flow {
+  to {
+    stroke-dashoffset: -84;
+  }
+}
+
+@keyframes chartGlow {
+  0%,
+  100% {
+    opacity: .72;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes barRise {
+  0%,
+  100% {
+    transform: scaleY(.94);
+  }
+
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes pointPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.22);
+  }
+}
+
+@keyframes arrowDrift {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(4px);
+  }
+}
+
+@media (max-width: 640px) {
+  .system-panel {
+    padding: 12px;
+    border-radius: 26px;
+  }
+
+  .process-map {
+    padding: 8px;
+    border-radius: 18px;
   }
 }
