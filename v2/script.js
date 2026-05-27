@@ -1,7 +1,5 @@
 const preloader = document.getElementById("preloader");
 const header = document.getElementById("siteHeader");
-const menuToggle = document.getElementById("menuToggle");
-const mobileNav = document.getElementById("mobileNav");
 const cursorGlow = document.getElementById("cursorGlow");
 const languageToggle = document.querySelector(".footer-language");
 
@@ -15,20 +13,12 @@ const translations = {
     "nav.process": "Processo",
     "nav.deliverables": "Entregas",
     "nav.contact": "Contato",
-    "hero.announcement": "Suporte estratégico para investimentos, ativos e decisões de negócio",
     "hero.title": "Clareza de investimento para proprietários e decisores.",
     "hero.lede":
       "A Novtek organiza informações de investimento, acompanha ativos e estrutura análises de oportunidades para que executivos avancem com confiança.",
     "hero.primary": "Fale com a Novtek",
-    "hero.secondary": "Explorar capacidades",
-    "hero.metric1": "Frentes principais",
-    "hero.metric2": "Entregas estruturadas",
-    "hero.metric3": "Comunicação executiva",
     "dashboard.title": "Visão do portfólio",
     "dashboard.status": "Ao vivo",
-    "dashboard.row1": "Score da oportunidade",
-    "dashboard.row2": "Visibilidade de risco",
-    "dashboard.row2.value": "Mapeado",
     "dashboard.mini1": "Movimento de capital",
     "dashboard.mini2": "Foco atual",
     "dashboard.mini2.value": "Estrutura de ativos",
@@ -90,32 +80,17 @@ const translations = {
       "Visibilidade de ativos, rotinas, indicadores e fluxos para manter responsabilidades e execução alinhadas.",
     "support.label": "Suporte à decisão",
     "support.title": "Construído para pessoas responsáveis por movimentos importantes.",
-    "support.card1.copy":
-      "Informação confiável, leitura executiva e acompanhamento disciplinado antes dos movimentos de capital.",
     "support.card1.title": "Decisões de capital",
     "support.card1.meta": "Soluções de investimento",
-    "support.card2.copy": "Uma visão comum de ativos, prioridades, responsabilidades e próximos passos.",
     "support.card2.title": "Visibilidade de ativos",
     "support.card2.meta": "Organização e acompanhamento",
-    "support.card3.copy":
-      "Análise estruturada para parcerias, aquisições, novos negócios e oportunidades estratégicas.",
     "support.card3.title": "Oportunidades de negócio",
     "support.card3.meta": "Revisão de oportunidades",
-    "faq.label": "FAQ",
-    "faq.title": "Perguntas antes de começar.",
-    "faq.q1": "A Novtek é banco ou corretora?",
-    "faq.a1":
-      "Não. A Novtek atua com inteligência de investimentos, organização de ativos, análise de negócios e suporte executivo à decisão.",
-    "faq.q2": "Para quais clientes isso funciona?",
-    "faq.a2":
-      "Investidores, fundadores, executivos e proprietários de negócios que precisam de estrutura antes de decisões financeiras ou estratégicas.",
-    "faq.q3": "A Novtek pode acompanhar ativos continuamente?",
-    "faq.a3":
-      "Sim. O trabalho pode incluir dashboards recorrentes, rotinas de revisão, relatórios e reuniões de acompanhamento.",
     "contact.label": "Contato",
-    "contact.title": "Pronto para organizar a próxima decisão?",
+    "contact.title": "Pronto para a próxima decisão?",
     "contact.copy":
       "Envie uma mensagem e comece com uma visão mais clara dos seus ativos, oportunidades e prioridades.",
+    "contact.button": "Fale com a Novtek",
     "footer.copy": "Solutions and Services."
   },
   en: {
@@ -127,20 +102,12 @@ const translations = {
     "nav.process": "Process",
     "nav.deliverables": "Deliverables",
     "nav.contact": "Contact",
-    "hero.announcement": "Strategic support for investments, assets and business decisions",
     "hero.title": "Investment clarity for owners and decision makers.",
     "hero.lede":
       "Novtek organizes investment information, monitors assets and structures business opportunity analysis so executives can move with confidence.",
     "hero.primary": "Talk to Novtek",
-    "hero.secondary": "Explore capabilities",
-    "hero.metric1": "Core areas",
-    "hero.metric2": "Structured deliverables",
-    "hero.metric3": "Executive communication",
     "dashboard.title": "Portfolio Overview",
     "dashboard.status": "Live",
-    "dashboard.row1": "Opportunity score",
-    "dashboard.row2": "Risk visibility",
-    "dashboard.row2.value": "Mapped",
     "dashboard.mini1": "Capital movement",
     "dashboard.mini2": "Current focus",
     "dashboard.mini2.value": "Asset structure",
@@ -200,30 +167,16 @@ const translations = {
       "Asset visibility, routines, indicators and workflows to keep responsibilities and execution aligned.",
     "support.label": "Decision support",
     "support.title": "Built for people responsible for important moves.",
-    "support.card1.copy":
-      "Reliable information, executive interpretation and disciplined monitoring before capital moves.",
     "support.card1.title": "Capital decisions",
     "support.card1.meta": "Investment solutions",
-    "support.card2.copy": "A common view of assets, priorities, responsibilities and next steps.",
     "support.card2.title": "Asset visibility",
     "support.card2.meta": "Organization and monitoring",
-    "support.card3.copy":
-      "Structured analysis for partnerships, acquisitions, ventures and strategic opportunities.",
     "support.card3.title": "Business opportunities",
     "support.card3.meta": "Opportunity review",
-    "faq.label": "FAQ",
-    "faq.title": "Questions before starting.",
-    "faq.q1": "Is Novtek a bank or broker?",
-    "faq.a1":
-      "No. Novtek focuses on investment intelligence, asset organization, business analysis and executive decision support.",
-    "faq.q2": "What kind of clients is this for?",
-    "faq.a2":
-      "Investors, founders, executives and business owners who need structure before making financial or strategic decisions.",
-    "faq.q3": "Can Novtek monitor assets continuously?",
-    "faq.a3": "Yes. The work can include recurring dashboards, review routines, reports and follow-up meetings.",
     "contact.label": "Contact",
-    "contact.title": "Ready to organize the next decision?",
+    "contact.title": "Ready to the next decision?",
     "contact.copy": "Send a message and start with a clearer view of your assets, opportunities and priorities.",
+    "contact.button": "Talk to Novtek",
     "footer.copy": "Solutions and Services."
   }
 };
@@ -272,8 +225,22 @@ function toggleLanguage() {
 window.toggleLanguage = toggleLanguage;
 
 window.addEventListener("load", () => {
+  const revealSite = () => {
+    document.body.classList.add("site-ready");
+    document.body.classList.remove("is-loading");
+  };
+
   if (preloader) {
-    setTimeout(() => preloader.classList.add("hide"), 150);
+    setTimeout(() => {
+      revealSite();
+      preloader.classList.add("hide");
+    }, 1050);
+
+    setTimeout(() => {
+      preloader.remove();
+    }, 2100);
+  } else {
+    revealSite();
   }
 });
 
@@ -282,22 +249,6 @@ window.addEventListener("scroll", () => {
     header.classList.toggle("scrolled", window.scrollY > 20);
   }
 });
-
-if (menuToggle && mobileNav) {
-  menuToggle.addEventListener("click", () => {
-    const isOpen = mobileNav.classList.toggle("active");
-    document.body.classList.toggle("no-scroll", isOpen);
-    menuToggle.setAttribute("aria-expanded", String(isOpen));
-  });
-
-  mobileNav.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-      mobileNav.classList.remove("active");
-      document.body.classList.remove("no-scroll");
-      menuToggle.setAttribute("aria-expanded", "false");
-    });
-  });
-}
 
 if (cursorGlow) {
   document.addEventListener("mousemove", event => {

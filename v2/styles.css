@@ -1448,3 +1448,293 @@ body {
     max-width:140px !important;
   }
 }
+
+/* Annotation polish pass */
+.hero-actions {
+  align-items: center;
+}
+
+.dashboard-card.main-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-card.main-card .chart {
+  flex: none;
+  height: 250px;
+  min-height: 250px;
+  margin-bottom: 0;
+  background:
+    linear-gradient(rgba(255,255,255,.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px),
+    rgba(255,255,255,.055);
+  background-size: 100% 33.33%, 20% 100%, auto;
+}
+
+.dashboard-card.main-card .chart span {
+  max-width: 42px;
+  min-height: 34px;
+  box-shadow: 0 12px 28px rgba(242, 106, 33, .2);
+}
+
+.feature-card.dark {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-card.dark p {
+  padding-right: 0;
+}
+
+.radial {
+  position: relative;
+  right: auto;
+  bottom: auto;
+  width: 152px;
+  height: 152px;
+  margin-top: auto;
+  align-self: flex-end;
+  background:
+    radial-gradient(circle at center, var(--dark) 0 42%, transparent 43%),
+    conic-gradient(var(--orange) 87%, rgba(255,255,255,.16) 0);
+  font-size: 1.85rem;
+}
+
+.phone-panel {
+  min-height: 720px;
+  padding: 28px;
+}
+
+.phone {
+  width: min(430px, 94%);
+  min-height: 630px;
+}
+
+.phone-content {
+  min-height: 552px;
+  padding: 36px;
+}
+
+.phone h3 {
+  font-size: 3rem;
+}
+
+.phone-item {
+  padding: 20px 22px;
+  font-size: 1rem;
+}
+
+.testimonials {
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+
+.testimonials .section-heading {
+  margin-bottom: 30px;
+}
+
+.review-card {
+  min-height: 170px;
+  padding: 28px;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.review-card strong {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+.review-card span {
+  font-weight: 700;
+}
+
+.final-cta {
+  padding-top: 92px;
+}
+
+.cta-panel .btn-light {
+  background: var(--dark);
+  color: #fff;
+}
+
+.cta-panel .btn-light:hover {
+  background: #000;
+}
+
+@media (max-width: 980px) {
+  .dashboard-card.main-card .chart {
+    height: 220px;
+    min-height: 220px;
+  }
+
+  .phone-panel {
+    min-height: 680px;
+  }
+
+  .phone {
+    width: min(460px, 94%);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-actions {
+    width: 100%;
+  }
+
+  .header-inner {
+    justify-content: flex-start;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    min-height: 58px;
+  }
+
+  .dashboard-shell {
+    min-height: 430px;
+  }
+
+  .dashboard-card.main-card {
+    min-height: 340px;
+  }
+
+  .dashboard-card.main-card .chart {
+    height: 210px;
+    min-height: 210px;
+    margin: 24px 0 0;
+  }
+
+  .radial {
+    width: 132px;
+    height: 132px;
+    align-self: flex-start;
+  }
+
+  .phone-panel {
+    min-height: auto;
+    padding: 18px;
+  }
+
+  .phone {
+    width: 100%;
+    min-height: 560px;
+  }
+
+  .phone-content {
+    min-height: 486px;
+    padding: 30px;
+  }
+
+  .phone h3 {
+    font-size: 2.5rem;
+  }
+
+  .review-card {
+    min-height: 150px;
+  }
+
+  .final-cta {
+    padding-top: 70px;
+  }
+}
+
+/* Branded opening splash */
+body.is-loading {
+  overflow: hidden;
+}
+
+body.is-loading .site-header,
+body.is-loading main,
+body.is-loading .footer {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.site-header,
+main,
+.footer {
+  transition: opacity .8s ease, transform .8s cubic-bezier(.22, 1, .36, 1);
+}
+
+body.site-ready .site-header,
+body.site-ready main,
+body.site-ready .footer {
+  opacity: 1;
+  transform: none;
+}
+
+.preloader {
+  z-index: 9999;
+  background: #fd4f02;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  transition:
+    transform .95s cubic-bezier(.76, 0, .24, 1),
+    border-radius .95s cubic-bezier(.76, 0, .24, 1),
+    visibility 0s linear .95s;
+}
+
+.preloader::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 22vh;
+  background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,.18));
+  opacity: .42;
+  pointer-events: none;
+}
+
+.preloader-logo {
+  width: min(470px, 62vw) !important;
+  max-width: 78vw;
+  height: auto !important;
+  filter: brightness(0) invert(1);
+  animation: splashLogoIn .9s cubic-bezier(.22, 1, .36, 1) both;
+  transition: opacity .65s ease, transform .95s cubic-bezier(.76, 0, .24, 1);
+  will-change: transform, opacity;
+}
+
+.preloader.hide {
+  transform: translateY(-100%);
+  border-radius: 0 0 42px 42px;
+  opacity: 1;
+  visibility: hidden;
+}
+
+.preloader.hide .preloader-logo {
+  opacity: 0;
+  transform: translateY(-44px) scale(.94);
+}
+
+@keyframes splashLogoIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 640px) {
+  .preloader-logo {
+    width: min(340px, 68vw) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .preloader,
+  .preloader-logo,
+  .site-header,
+  main,
+  .footer {
+    animation: none !important;
+    transition-duration: .01ms !important;
+  }
+}
