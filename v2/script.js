@@ -93,8 +93,8 @@ const translations = {
     "contact.label": "Contato",
     "contact.title": "Pronto para a próxima decisão?",
     "contact.copy":
-      "Envie uma mensagem e comece com uma visão mais clara dos seus ativos, oportunidades e prioridades.",
-    "contact.button": "Fale com a Novtek",
+      "Para estruturar soluções e serviços focados em investimentos, ativos e negócios com padrão executivo.",
+    "contact.button": "Fale com a Novtek.",
     "footer.copy": "Solutions and Services."
   },
   en: {
@@ -183,8 +183,9 @@ const translations = {
     "support.card3.meta": "Opportunity review",
     "contact.label": "Contact",
     "contact.title": "Ready to the next decision?",
-    "contact.copy": "Send a message and start with a clearer view of your assets, opportunities and priorities.",
-    "contact.button": "Talk to Novtek",
+    "contact.copy":
+      "To structure solutions and services focused on investments, assets and business with an executive standard.",
+    "contact.button": "Talk to Novtek.",
     "footer.copy": "Solutions and Services."
   }
 };
