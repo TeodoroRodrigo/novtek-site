@@ -2369,15 +2369,22 @@ body.site-ready .footer {
 
 @media (max-width: 640px) {
   .section {
-    padding: 58px 0;
+    padding: 46px 0;
   }
 
   .hero {
     padding-top: 104px;
   }
 
+  .hero-grid,
+  .split-grid,
+  .insights-grid,
+  .faq-grid {
+    gap: 24px;
+  }
+
   .section-heading {
-    margin-bottom: 28px;
+    margin-bottom: 22px;
   }
 
   .hero h1,
@@ -2391,8 +2398,20 @@ body.site-ready .footer {
   }
 
   .hero p {
-    margin: 20px 0 24px;
+    margin: 18px 0 0;
     font-size: .95rem;
+  }
+
+  .features {
+    padding-bottom: 30px;
+  }
+
+  .split-section {
+    padding-top: 32px;
+  }
+
+  .feature-grid {
+    gap: 14px;
   }
 
   .feature-card,
@@ -2417,10 +2436,14 @@ body.site-ready .footer {
   }
 
   .cta-panel {
-    padding: 36px 0 40px;
+    padding: 24px 0 28px;
+  }
+
+  .cta-panel p {
+    margin-top: 18px;
   }
 
   .footer {
-    padding: 24px 0;
+    padding: 20px 0;
   }
 }
