@@ -40,6 +40,9 @@ const translations = {
     "features.card3.copy": "Processos, rotinas e estruturas para empresas que precisam operar com mais controle.",
     "features.card4.title": "Inteligência executiva",
     "features.card4.copy": "Dashboards, indicadores e ritos de acompanhamento para decisões mais objetivas.",
+    "features.card5.title": "Investimentos alternativos",
+    "features.card5.copy":
+      "Teses alternativas e oportunidades inovadoras estruturadas com contexto, disciplina e visibilidade executiva.",
     "about.label": "Sobre a Novtek",
     "about.title": "Menos ruído. Mais estrutura. Conversas melhores.",
     "about.copy":
@@ -129,6 +132,9 @@ const translations = {
     "features.card3.copy": "Processes, routines and structures for companies that need greater control.",
     "features.card4.title": "Executive intelligence",
     "features.card4.copy": "Dashboards, indicators and monitoring rhythms for more objective decisions.",
+    "features.card5.title": "Alternative investments",
+    "features.card5.copy":
+      "Alternative theses and innovative opportunities structured with context, discipline and executive visibility.",
     "about.label": "About Novtek",
     "about.title": "Less noise. More structure. Better conversations.",
     "about.copy":
